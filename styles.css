@@ -208,3 +208,18 @@ i:hover{
     margin-bottom:10px;
     
 }
+
+@media screen and (max-width:520px){
+    header{
+        width:100%;
+    }
+
+    html{
+        font-size:10px;
+    }
+
+    #nav-bar{
+        width:95%;
+    }
+
+}
