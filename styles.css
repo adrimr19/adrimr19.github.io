@@ -220,6 +220,26 @@ i:hover{
 
     #nav-bar{
         width:95%;
+        justify-content:center;
+    }
+
+    i{
+        display:none;
+    }
+
+    #nav-list{
+        margin-left:0;
+        display:flex;
+        justify-content:center;
+    }
+
+    #social-media{
+        margin-right:0;
+        display:none;
+    }
+
+    .description-panel{
+        max-width:90%;
     }
 
 }
