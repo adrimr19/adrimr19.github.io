@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Jersey+20&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Jersey+20&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+
 :root{
     --bg-color:#05081b;
     --main-color:#163460;
@@ -40,6 +41,11 @@ h2{
     font-family: "Jersey 20", sans-serif;
     font-weight: 400;
     font-style: normal;
+    display:block;
+}
+
+h3{
+    display:block;
 }
 
 body{
@@ -166,7 +172,19 @@ i:hover{
     border-right-color: red;
 }
 
+.container-column{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
 
+.container-row{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
 
 #sobre-mi{
     width:100%;
@@ -198,16 +216,75 @@ i:hover{
     filter: drop-shadow(0 0 6px var(--main-border-color));
 }
 
-.description-panel p{
+p{
     font-size:1.5rem;
     
 }
 
-.description-panel h2{
+h2{
     font-size:2rem;
     margin-bottom:10px;
     
 }
+
+h3{
+    font-size:1.8rem;
+}
+
+.container-column h2{
+    margin-bottom:20px;
+}
+
+#habilidades{
+    margin-top:50px;
+    max-width:900px;
+    display:flex;
+    flex-wrap:wrap;
+    padding:20px;
+
+}
+
+.habilidades{
+    width:45%;
+    background-color:var(--main-color);
+    border:2px solid var(--main-border-color);
+    padding:10px;
+    border-radius:5px;
+    box-shadow: 5px 5px 2px 1px rgb(0 0 255 / 0.2);
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:column;
+    gap:5px;
+
+}
+
+.habilidades:hover{
+    filter: drop-shadow(0 0 6px var(--main-border-color));
+}
+
+.text-container{
+    display:flex;
+    flex-wrap:wrap;
+    gap:5px;
+}
+
+.text{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:5px;
+    padding:5px;
+    background-color:var(--main-border-color);
+    border-radius:3px;
+}
+
+.icon{
+    height:30px;
+    width:30px;
+    object-fit: cover;
+}
+
+
 
 @media screen and (max-width:520px){
     header{
@@ -242,4 +319,13 @@ i:hover{
         max-width:90%;
     }
 
+    .container-row{
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+    }
+
+    .habilidades{
+        width:90%;
+    }
 }
