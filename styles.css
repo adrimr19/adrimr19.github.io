@@ -337,7 +337,7 @@ h3{
     text-decoration:none;
 }
 
-a:visited{
+.card a:visited{
     color:var(--main-color);
 }
 
